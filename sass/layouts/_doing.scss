@@ -1,7 +1,7 @@
 .section-doing {
     padding-top: 0;
   }
-  .doing-item {
+  .doing {
     display: flex;
     gap: 30px;
     justify-content: space-between;
@@ -17,24 +17,22 @@
     text-align: center;
     letter-spacing: 0.03em;
   }
-  .do-description {
+  .doing__description {
     position: relative;
   }
-  .do-about {
+  .doing__about {
     position: absolute;
-    display: flex;
-    align-items: center;
+
+    @extend %flex;
+
     justify-content: center;
     bottom: 0px;
     min-width: 370px;
     min-height: 70px;
   
-  
-    font-family: "Roboto";
+    @include font ("Roboto", 700, 14px, 1.14);
+    
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
